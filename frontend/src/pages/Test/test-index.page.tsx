@@ -93,7 +93,7 @@ export const TestIndexPage = () => {
                 const response: { result: string } = res.data;
                 notification.open({
                     message: 'Success',
-                    description: 'Operation Success',
+                    description: 'Result ' + response.result,
                 });
                 onSaveIntoStorage(response.result, name);
             })
