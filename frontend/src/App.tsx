@@ -23,6 +23,10 @@ function App() {
             <BrowserRouter>
                 {
                     <Routes>
+                        <Route
+                            path="/"
+                            element={<Navigate to={'/test'}/>}
+                        />
                         <Route path="/" element={<LayoutIndex/>}>
                             <Route path="/test" element={<TestIndexPage/>}/>
                             <Route path="/history" element={<TestHistoryPage/>}/>
